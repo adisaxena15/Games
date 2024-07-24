@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('../assets/colors.css');
+body {
+  background-color: #000207;
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.homepage {
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-section {
+  margin-top: 100px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.info-section {
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+#btn-container{
+  display: flex;
+  margin-top: 8rem;
+  overflow: hidden;
+  align-items:center;
+  justify-content: center;
+  height: 22rem;
+  width: 100vw;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    height: 6rem;
+    min-width: 9rem;
+    max-width: 12rem;
+    width: 12rem;
+    transition: transform 0.2s;
+    overflow: hidden;
+    border-radius: 0.9em; 
+    padding: 3px;
+    border: none;
+    flex: 1;
+    max-height: 6rem;
+  }
+  @media (max-width: 1440px) {
+    .threeD-button .button {
+      min-width: 8rem;
+      width: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .threeD-button .button {
+      min-width: 7rem;
+      width: auto; 
+      height: 5rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .threeD-button .button {
+      min-width: 6rem;
+      width: auto; 
+      height: 4rem; 
+    }
+  }
+  .button:hover {
+    transform: scale(0.95);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  .button .spin-bg {
+    position: absolute;
+    top: -1000%;
+    right: -1000%;
+    bottom: -1000%;
+    left: -1000%;
+    background: conic-gradient(from 90deg at 50% 50%, #e7029a 0%, #f472b6 50%, #bd5fff 100%);
+    animation: spin 4s linear infinite;
+  }  
+  .button .button-content {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: #2a2a2a;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    backdrop-filter: blur(30px);
+    gap: 0.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .button .button-content:hover {
+    background-color: var(--neon);
+    opacity: 1;
+    color: #323232;
+  }
+   
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #text-container{
+    display: flex;
+    justify-content: center;
+    align-items:bottom;
+    overflow: hidden;
+    height: 4.1rem;
+    width: 100%;
+  }
+  #text-container div span{
+    display: inline-block;
+  }
+  .next-line{
+    background-color: white;
+  }
+  @media (max-width: 1024px) {
+    .threeD-button, button {
+      flex: 1 1 100%;
+      padding: 10px 20px;
+    }
+  }
+  #button-container{
+    display: flex;
+    gap: 2rem;
+  }
