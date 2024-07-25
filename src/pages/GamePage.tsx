@@ -102,7 +102,6 @@ useEffect(()=>{
 function handleGoBack(){}
 
 const handleHintClick = useCallback((hintLetters: any, counter: number) =>{
-  console.log(counter)
     setGuessedLetters(curr=> [...curr, hintLetters])
     const spaces = new Array(counter).fill(' ');
       setIncorrectLetters((curr)=>[...curr, ...spaces])
@@ -112,11 +111,7 @@ const handleHintClick = useCallback((hintLetters: any, counter: number) =>{
   return (
     <>
     <div className="go-back-button" style={{position: "absolute", top: width<800?"1%":"3%", left:"3%" }}>
-      <motion.div style={{scale: width<800? 0.5:1}} whileHover={{rotate: -90, y:100, scale: 0.8}} transition={{duration: 0.6}}> <Link to="/" style={{ textDecoration: 'none' }}><Button text={<svg viewBox="0 0 384 512" width="50" height="50">
-    <path
-      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
-    ></path>
-  </svg>} onClick={handleGoBack}/></Link></motion.div>
+      <motion.div style={{scale: width<800? 0.5:1}} whileHover={{rotate: -90, y:100, scale: 0.8}} transition={{duration: 0.6}}> <Link to=".." relative="path" style={{ textDecoration: 'none' }}><Button text={"Back"} onClick={handleGoBack}/></Link></motion.div>
     </div>
     <div style={{
       maxWidth: "880px",
