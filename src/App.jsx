@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { lazy, Suspense } from 'react';
-import {RouterProvider,createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css'
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
