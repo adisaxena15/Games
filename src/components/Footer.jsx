@@ -8,20 +8,6 @@ const GlassmorphicFooter = () => {
 
   const duplicatedText = [...scrollingText];
   return (
-/*     <footer className="glassmorphic-footer">
-      <motion.div
-        className="footer-links"
-
-        animate={{ x: ['0%','100%'] }}
-        transition={{ repeat: Infinity, repeatType: 'loop', duration: 20, ease: 'linear' }} 
-      >
-        {duplicatedText.map((text, i) => (
-          <a className= "footer-items" key={i} href={text === "HANGMAN"? "game":"#"}>
-            {text}
-          </a>
-        ))}
-      </motion.div>
-    </footer> */
     <div className="wrapper">
       <div className="marquee">
         <div className = "marquee-group">

@@ -13,7 +13,7 @@ export default function HangManWord({guessedLetters, wordToGuess, reveal=false  
   return (
     <div style={{marginTop: "2rem", display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0.25em", width: "90vw",fontSize: "3rem",fontWeight: "bold", textTransform: "uppercase"}}>
       {wordToGuess.split("").map((letter, index) => (
-        <span style={{borderBottom: "0.1em solid white"}} key={index}>
+        <span style={{borderBottom: "0.1em solid white", width:"2rem", textAlign: "center"}} key={index}>
             <motion.span 
             initial="initial"
             animate={guessedLetters.includes(letter) || reveal? "animate" : "initial"}
