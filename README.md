@@ -32,10 +32,12 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/adisaxena15/React-Hangman.git
    ```
+   
 2. Navigate to the project directory
   ```bash
-  cd react-hangman
+      cd react-hangman
   ```
+
 3. Start the Application
    ```bash
    npm run dev
