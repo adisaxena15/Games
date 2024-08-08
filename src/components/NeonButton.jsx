@@ -9,7 +9,7 @@ export default function NeonButton({ className, children, onClick }){
   
   return (
     <motion.button
-      className={`button neon-button ${className}`}
+      className={`button ${className}`}
       initial={{ boxShadow: 'none' }}
       whileHover={{
         boxShadow: [
