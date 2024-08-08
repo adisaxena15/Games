@@ -5,8 +5,11 @@
 
 This Hangman game is a modern take on the classic word guessing game. Built with React and enhanced with Framer Motion for smooth animations, this game provides a visually appealing and interactive experience. Challenge yourself to guess the word before the time runs out!
 
-![image](https://github.com/user-attachments/assets/d8fddddb-7b84-4e7d-96a6-f11c1d13d6f2)
 ![image](https://github.com/user-attachments/assets/ba89a8b0-61d8-45b0-98b8-ce3e2211ec55)
+
+
+![image](https://github.com/user-attachments/assets/d8fddddb-7b84-4e7d-96a6-f11c1d13d6f2)
+
 
 ## Features
 
